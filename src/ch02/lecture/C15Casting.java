@@ -28,5 +28,14 @@ public class C15Casting {
         b = a;
         System.out.println("b = " + b);
 
+        // 실수형 -> 정수형 (강제로)
+        // 소수점 이하 버릴 때 유용함
+        double c = 123.456;
+        // 강제로
+        int d = (int) c; //type casting
+
+        System.out.println("c = " + c);
+        System.out.println("d = " + d);
+
     }
 }
