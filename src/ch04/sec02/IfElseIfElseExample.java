@@ -7,13 +7,12 @@ public class IfElseIfElseExample {
         Scanner scanner = new Scanner(System.in);
         System.out.println("점수를 입력하세요: ");
         String line = scanner.nextLine();
-
+        
         // int score = 75;
         int score = Integer.parseInt(line);
 //        int score = scanner.nextInt();
 //        scanner.nextLine();
 
 
-        
     }
 }
