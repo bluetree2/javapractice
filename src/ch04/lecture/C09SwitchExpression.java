@@ -7,7 +7,7 @@ public class C09SwitchExpression {
         Scanner scanner = new Scanner(System.in);
         System.out.println("점수 : ");
         int score = scanner.nextInt();
-//        int score = (Integer) scanner.nextLine();
+//        int score = Integer.parseInt(scanner.nextLine());
 
         String message;
         switch (score) {
