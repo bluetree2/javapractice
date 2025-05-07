@@ -35,7 +35,7 @@ public class C26StringMethod {
         boolean m = a.endsWith("stop"); // false
         System.out.println("m = " + m);
 
-        // lastindexOf : 특정 문자열이 마지막에 나타나는 위치 리턴
+        // lastIndexOf : 특정 문자열이 마지막에 나타나는 위치 리턴
         int n = a.lastIndexOf("hello");
         System.out.println("n = " + n); // 24
         int o = a.lastIndexOf("jsp");
