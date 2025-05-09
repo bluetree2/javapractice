@@ -83,6 +83,8 @@ public class BankApplication {
                     // 종료
                     run = false;
                 }
+                default -> System.out.println("잘못 입력하셨습니다");
+
             }
         }
         System.out.println("프로그램 종료");
