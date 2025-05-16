@@ -50,6 +50,7 @@ public class App05 {
             }
         }
 
+
         switch (right) {
             // 3개 다 맞으면 1등
             case 3 -> {
