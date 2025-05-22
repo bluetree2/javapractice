@@ -3,7 +3,7 @@ package ch11.lecture;
 public class App01 {
     public static void main(String[] args) {
 //        String a = null;
-//        int length = a.length(); // nullpointerException
+//        int length = a.length(); // NullPointerException
 
         int a = 0;
         int b = 0;
@@ -14,6 +14,7 @@ public class App01 {
 
         Object d = "java";
         Integer e = (Integer) d; // ClassCastException  잘못된 형변환
+
 
         System.out.println("프로그램 진행");
     }
