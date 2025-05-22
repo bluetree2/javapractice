@@ -11,6 +11,7 @@ public class ExceptionHandlingExample {
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("배열 인덱스가 초과됨 : " + e.getMessage());
             } catch (Exception e) {
+                // 다향성의 상속 관계에 의해 상위 타입은 아래에 있어야 함
                 System.out.println("실행에 문제가 있습니다.");
             }
         }
