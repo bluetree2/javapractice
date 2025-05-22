@@ -1,7 +1,4 @@
-package ch11.sec03l.exam01;
-
-import java.lang.reflect.Array;
-import java.sql.SQLOutput;
+package ch11.sec03.exam01;
 
 public class ExceptionHandlingExample {
     public static void main(String[] args) {
