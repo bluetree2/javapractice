@@ -1,4 +1,4 @@
-package ch18.lecture.p05hfilter;
+package ch18.lecture.p05filter;
 
 import java.io.*;
 
