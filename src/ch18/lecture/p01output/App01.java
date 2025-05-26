@@ -1,11 +1,10 @@
-package ch18.lecture;
+package ch18.lecture.p01output;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class p01output {
+public class App01 {
     public static void main(String[] args) throws IOException {
         // output stream : (출력)프로그램에서 나가는 데이터 스트림
         // 1byte 씩 출력
