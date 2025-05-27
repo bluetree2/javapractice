@@ -7,7 +7,7 @@ import java.io.*;
 public class App08 {
     public static void main(String[] args) throws IOException {
         String file = "C:/Temp/Filter08.txt";
-        try (Writer writer = new FilterWriter(file)) {
+        try (Writer writer = new FileWriter(file)) {
             writer.write('a');
             writer.write('b');
             writer.write('한');
