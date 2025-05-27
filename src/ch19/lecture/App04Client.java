@@ -2,6 +2,7 @@ package ch19.lecture;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class App04Client {
     public static void main(String[] args) {
@@ -10,9 +11,14 @@ public class App04Client {
             OutputStreamWriter osw = new OutputStreamWriter(os);
             BufferedWriter bw = new BufferedWriter(osw);
             PrintWriter pw = new PrintWriter(bw);
-            try (pw; osw; os; bw) {
-                pw.println("안녕하세요. 저는 클라이언트 입니다.");
-                pw.flush();
+            Scanner scanner = new Scanner(System.in);
+
+            try (pw; osw; os; bw; scanner) {
+                while (true) {
+                    System.out.print("입력 : ");
+                    pw.println(scanner.nextLine());
+                    pw.flush();
+                }
             }
 
         } catch (Exception e) {
