@@ -8,7 +8,7 @@ import java.lang.reflect.Field;
 
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
-@interface MyAnnotation05 {
+@interface MyAnnotation08 {
     String value() default "";
 }
 
@@ -16,8 +16,8 @@ public class App05 {
     public static void main(String[] args) {
         Class<?> c = Car.class;
         Field[] field = c.getDeclaredFields();
-        MyAnnotation05 a0 = field[0].getAnnotation(MyAnnotation05.class);
-        MyAnnotation05 a1 = field[1].getAnnotation(MyAnnotation05.class);
+        MyAnnotation08 a0 = field[0].getAnnotation(MyAnnotation08.class);
+        MyAnnotation08 a1 = field[1].getAnnotation(MyAnnotation08.class);
 
         String v0 = a0.value();
         String v1 = a1.value();
@@ -29,8 +29,8 @@ public class App05 {
 }
 
 class Car {
-    @MyAnnotation05("tesla")
+    @MyAnnotation08("tesla")
     private String name;
-    @MyAnnotation05
+    @MyAnnotation08
     private int price;
 }
